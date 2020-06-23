@@ -7,8 +7,8 @@ import json
 import pyperclip
 import time
 
-with open('cities.json', encoding='utf-8-sig') as cities_json_file:
-    cities = cities_json_file.read()
+with open('cities.json', encoding='utf-8-sig') as cities_json:
+    cities = cities_json.read()
     cities = json.loads(cities)
 
 driver = webdriver.Chrome(executable_path=r"chromedriver.exe")
